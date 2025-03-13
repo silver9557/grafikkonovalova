@@ -261,6 +261,25 @@
             color: #333;
             border: 1px solid #ccc;
         }
+        .whatsapp-button-container {
+    margin-top: 15px; /* Добавим отступ сверху */
+}
+
+        .whatsapp-button {
+            background: #25D366; /* Зеленый цвет WhatsApp */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%; /* Чтобы кнопка занимала всю ширину контейнера */
+            font-size: 14px;
+        }
+
+        .whatsapp-button:hover {
+            background: #128C7E; /* Более темный зеленый при наведении */
+        }
     </style>
 </head>
 <body>
@@ -302,6 +321,15 @@
         <div class="working-employees">
             <h3 id="workingTitle">Работают сегодня:</h3>
             <ul id="workingToday"></ul>
+        </div>
+        <div class="whatsapp-button-container">
+            <a href="https://wa.me/79632328383?text=Добрый день! Пишите сюда только по существу. Не забудьте подготовить вин-код автомобиля и список необходимых запчастей.
+            С проценками и глупыми вопросами звоните 260-10-10. 
+            Если Вас заблокировали, не обижайтесь. 
+            Этот канал общения не официальный и обрабатывается только двумя людьми. 
+            Будьте людьми, подождите и не шлите сюда знаки вопроса." target="_blank">
+                <button class="whatsapp-button">Написать в WhatsApp на Коновалова</button>
+            </a>
         </div>
         <div class="notes">
             <p><strong>Примечание:</strong> Петрович работает по будням с 09:00 до 18:00. <span id="petrovichHours"></span></p>
